@@ -1,0 +1,55 @@
+body {
+  font: 300 16px/1.5 'Roboto', sans-serif;
+  color: #333;
+  background: #e3e9ff;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 640px;
+  padding: 0 15px;
+}
+
+.btn-icon:before {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+}
+
+.btn-icon.remove:before {
+  content: '\f2ed';
+}
+
+.todoBlock {
+  padding: 30px;
+  margin: 30px 0;
+  background: #fff;
+  box-shadow: 5px 5px 20px -5px rgba(0, 0, 0, 0.2);
+}
+
+.todoBlock .titleHolder {
+  margin: 0 0 30px;
+}
+
+.listHolder li {
+  counter-increment: step-counter;
+  overflow: hidden;
+  padding: 0 0 20px 30px;
+  position: relative;
+}
+
+.listHolder li:before {
+  content: counter(step-counter);
+  background: #4ac7be;
+  color: #fff;
+  font-size: 14px;
+  padding: 0px 6px;
+  border-radius: 3px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.listHolder .btn-icon {
+  float: right;
+  margin: 0 0 0 20px;
+}
